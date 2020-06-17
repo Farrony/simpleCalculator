@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+     <meta charset="utf-8">
+	 <title>Calculator</title>
+	 <link rel="stylesheet" href="css/bootstrap.min.css">
+	 <link rel="stylesheet" href="css/font-awesome.min.css">
+	 <link rel="stylesheet" href="css/main.css">
+	 <link rel="stylesheet" href="css/style.css">
+	 
+	    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		
+		<div id="app">
+			<div class="container">
+				<h1 style="text-align: center;">Simple Calculator</h1>
+				<div class="card">
+					<div class="card-body">
+						<div class="alert alert-danger" v-if="has_error">
+							Error - {{error}}
+						</div>
+						<div class="alert alert-success" v-else="has_error">
+							Output => {{output}} {{result}} 
+						</div>
+						<div class="row" style="margin-top: 10px">
+							<div class="col-md-3 col-md-offset-3">
+								<input type="" name="" class="form-control" @keyup="checkError" v-model="firstNum">
+							</div>
+							<div class="col-md-3">
+								<input type="" name="" class="form-control" @keyup="checkError" v-model="secondNum">
+							</div>
+						</div>
+						<div class="row" style="margin: 10px;">
+							<div class="col-md-offset-3">
+								<button class="btn btn-success" @click="plus" type="button"> + </button>
+								<button class="btn btn-success" @click="minus" type="button"> - </button>
+								<button class="btn btn-success" @click="multiplication" type="button"> * </button>
+								<button class="btn btn-success" @click="division" type="button"> / </button>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+    <script type="text/javascript" src="js/vue.js"></script>
+		
+		<script type="" src="js/app.js"></script>
+		<script src="js/jquery-1.12.3.min.js"></script> -->
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
+	
